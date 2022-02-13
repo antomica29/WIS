@@ -21,8 +21,11 @@ function getPageContent($atts)
     ), $atts);
     $title = $args['title'];
 
-    echo $title;
+    $page = file_get_contents('https://www.wis-ltd.net/blog/');
 
+    ob_start();
+    require_once "shortcodes/wis-feed/wis-feed.php";
+    return ob_get_clean();
 }
 add_shortcode('wis-feed', 'getPageContent');
 
