@@ -1,0 +1,111 @@
+.wis-feed {
+    max-width: 100% !important;
+}
+
+.wis-feed .title{
+    margin-bottom: 30px;
+    font-size: 55px;
+    color: #999;
+}
+
+.blog-item-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-item-container-card {
+    width: calc(25% - 12px);
+    box-sizing: border-box;
+    margin-right: 15px;
+    border: solid 1px #dddddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.blog-item-container-card .blog-section-thumb img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.blog-item-container-card:last-child {
+    margin-right: 0;
+}
+
+.blog-item-container-card h2 {
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bolder;
+    mar
+}
+
+.blog-item-container-card h2 a {
+    text-decoration: none;
+}
+
+.blog-item-container-card .blog-section-content {
+    padding: 0 20px 80px;
+}
+
+.blog-item-container-card .blog-section-content-except p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+.blog-item-container-card .blog-btn-read {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+@media only screen and (max-width: 1100px) {
+    .blog-item-container-card .blog-section-thumb img{
+        height: 150px;
+    }
+
+    .blog-item-container-card .blog-section-content-except p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .blog-item-container-card {
+        width: calc(50% - 8px);
+        margin-bottom: 15px;
+    }
+
+    .blog-item-container-card:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .blog-item-container-card .blog-section-thumb img{
+        height: 150px;
+    }
+
+    .blog-item-container-card .blog-section-content-except p {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .blog-item-container-card {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .blog-item-container-card .blog-section-thumb img{
+        height: calc((100vw /16) * 9);
+    }
+}
